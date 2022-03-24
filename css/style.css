@@ -111,7 +111,7 @@ p {
 }
 
 .main--galery-item {
-    background: rgb(147, 213, 252);
+    background: var(--custom-sc-grey);
     cursor: pointer;
     height: auto;
     overflow: hidden;
@@ -120,7 +120,6 @@ p {
 }
 
 .main--galery-item img {
-    /* transform: scale(1); */
     transition: all 0.3s ease;
 }
 
