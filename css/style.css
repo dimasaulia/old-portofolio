@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --custom-sc-white: #f1f1f1;
+    --custom-sc-grey: #747474;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.c--link {
+    color: #000;
+}
+
+.c--link:hover {
+    color: #000;
+}
+
+.c--bg-grey {
+    background: var(--custom-sc-grey);
+}
+
+
+/* Navbar */
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+/* Hero */
+.hero--container {
+    background: rgba(150, 150, 150, 0.133);
+    height: 400px;
+    overflow: hidden;
+    padding: 0 !important;
+    position: relative;
+    width: 100%;
+}
+
+.hero--image {
+    bottom: 50%;
+    position: absolute;
+    transform: translateY(50%);
+}
+
+/* Main */
+.main--profil-container {
+    height: 800px;
+    position: relative;
+}
+
+.main--profil-card {
+    background: var(--custom-sc-white);
+    overflow: hidden;
+    position: absolute;
+    top: -25%;
+    width: 90%;
+}
+
+.main--profil-biografi {
+    border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+.main--profil-picture {
+    width: 30%;
+}
+
+.main--icon {
+    width: 20px;
+}
+
+.c--sosial_media {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    color: var(--custom-sc-white);
+    height: 30px;
+    width: 30px;
+}
+
+.c--sosial_media:hover {
+    color: var(--custom-sc-white);
+}
+
+@media screen and (max-width: 768px) {
+    .hero--container {
+        height: 35vh;
+    }
+
+    .main--profil-card {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main--profil-container {
+        height: 700px;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .hero--container {
+        height: 200px;
+    }
+
+    .main--profil-card {
+        top: -20%;
+    }
+
+    .main--profil-container {
+        height: 670px;
+    }
+
+}
+
+/* Custom for redmi note 5 */
+@media screen and (max-width: 400px) {
+    .main--profil-container {
+        height: 750px;
+    }
+}
