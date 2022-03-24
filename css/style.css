@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
-    --custom-sc-white: #f1f1f1;
+    --custom-sc-white: #fff;
     --custom-sc-grey: #747474;
+    --custom-shadow: 2px 6px 31px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -78,6 +79,7 @@ p {
 
 .main--profil-card {
     background: var(--custom-sc-white);
+    box-shadow: var(--custom-shadow);
     overflow: hidden;
     position: absolute;
     top: -25%;
@@ -135,14 +137,18 @@ p {
     }
 
     .main--profil-container {
-        height: 670px;
+        height: 750px;
     }
 
 }
 
 /* Custom for redmi note 5 */
 @media screen and (max-width: 400px) {
+    .main--profil-biografi>img {
+        margin-right: 2rem;
+    }
+
     .main--profil-container {
-        height: 750px;
+        height: 800px;
     }
 }
